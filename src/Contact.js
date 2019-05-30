@@ -1,13 +1,13 @@
 import React, { Component } from 'react'
-import './App.css'
+import './App.scss'
 
 class Contact extends Component {
 
     render() {
       return (
-            <div>
+          <section>
 
-            </div>
+          </section>
         )
     }
 }

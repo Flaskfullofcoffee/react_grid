@@ -1,13 +1,13 @@
 import React, { Component } from 'react'
-import './App.css'
+import './App.scss'
 
 class Rates extends Component {
 
     render() {
       return (
-            <div>
+          <section>
 
-            </div>
+          </section>
         )
     }
 }
