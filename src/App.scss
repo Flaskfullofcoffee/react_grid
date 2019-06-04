@@ -1,1 +1,38 @@
+/* Global Styles */
 
+section {
+  // height: 100vh;
+}
+
+/* Carousel Styles */
+
+.carousel {
+  height: 100vh;
+  background: teal;
+  .slider {
+    display: flex;
+    flex-wrap: nowrap;
+    overflow: hidden;
+    height: 100%;
+    .slide {
+      position: absolute;
+      left: 0;
+      width: 100%;
+      opacity: 0;
+      z-index: 1;
+      transition: opacity 1s;
+    }
+    .img1, .img3 {
+      height: 100%;
+      background: tomato;
+    }
+    .img2 {
+      height: 100%;
+      background: firebrick;
+    }
+    .shown {
+      opacity: 1;
+      z-index: 2;
+    }
+  }
+}
