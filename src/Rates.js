@@ -5,7 +5,7 @@ class Rates extends Component {
 
     render() {
       return (
-          <section>
+          <section className='rates'>
 
           </section>
         )

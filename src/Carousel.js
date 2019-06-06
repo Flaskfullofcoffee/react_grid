@@ -1,11 +1,12 @@
 import React, { Component } from 'react'
+import {CSSTransition} from 'react-transition-group'
 import './App.scss'
 
 class Carousel extends Component {
   constructor(props) {
     super(props)
     this.state = {
-      count: 0
+      count: 1
     }
     this.timer = this.timer.bind(this)
   }
@@ -18,8 +19,10 @@ class Carousel extends Component {
   }
 
   timer() {
-    this.state.count >= 2 ? this.setState({ count: 0 }) : this.setState({ count: this.state.count +1 })
+    this.state.count >= 3 ? this.setState({ count: 1 }) : this.setState({ count: this.state.count +1 })
   }
+
+
 
 
     render() {
@@ -27,7 +30,7 @@ class Carousel extends Component {
       return (
             <section className='carousel'>
               <div className='slider'>
-                {this.state.count}
+                <div className={`slide img${this.state.count}`}></div>
               </div>
               <div className='dots-wrapper'></div>
             </section>

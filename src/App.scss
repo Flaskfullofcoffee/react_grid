@@ -1,10 +1,16 @@
 /* Global Styles */
-
+body, * {
+  margin: 0;
+  padding: 0;
+}
+li {
+  list-style-type: none;
+}
 section {
-  // height: 100vh;
+  height: 100vh;
 }
 
-/* Carousel Styles */
+/* Carousel Section Styles */
 
 .carousel {
   height: 100vh;
@@ -20,19 +26,62 @@ section {
       width: 100%;
       opacity: 0;
       z-index: 1;
-      transition: opacity 1s;
     }
     .img1, .img3 {
       height: 100%;
-      background: tomato;
+      opacity: 1;
+      background-color: indigo;
+      transition: opacity 4s;
     }
     .img2 {
       height: 100%;
-      background: firebrick;
-    }
-    .shown {
       opacity: 1;
-      z-index: 2;
+      background-color: firebrick;
+      transition: opacity 4s;
     }
   }
 }
+
+/* Game Section Styles */
+
+.games {
+  background: slategrey;
+  .list-row {
+    height: 50%;
+  }
+  .list-row-top {
+    background: tomato;
+  }
+  .list-row-bottom {
+    background: indigo;
+  }
+}
+
+.game-list {
+  display: flex;
+  flex-direction: row;
+  .game {
+    height: 50vh;
+    width: 25vw;
+  }
+}
+
+/* Rates Section Styles */
+
+.rates {
+  background: firebrick;
+}
+
+/* Contact Section Styles */
+
+.contact {
+  background: slategrey;
+}
+
+/* Location Section Styles */
+
+.location {
+  background: firebrick;
+}
+
+/* Media-queries Section */

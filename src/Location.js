@@ -5,7 +5,7 @@ class Location extends Component {
 
     render() {
       return (
-          <section>
+          <section className='location'>
 
           </section>
         )
