@@ -6,6 +6,16 @@ body, * {
 li {
   list-style-type: none;
 }
+.btn {
+  text-align: center;
+  padding: 10px 30px;
+  margin: 0 .75vw;
+  border-radius: 30px;
+  text-transform: uppercase;
+  font-size: 1.75vw;
+  background: linear-gradient(to right, #00c9db 0%, #0099d6 100%);
+  box-shadow: none;
+}
 section {
   height: 100vh;
 }
@@ -69,8 +79,74 @@ section {
 /* Rates Section Styles */
 
 .rates {
+  height: 150vh;
+  text-align: center;
   background: firebrick;
+  .title {
+    position: relative;
+    top: 8vh;
+    width: 15%;
+    font-size: 4vw;
+    border-bottom: 4px solid black;
+    display: inline-block;
+  }
+  .location-rate, .prices {
+    position: relative;
+    display: flex;
+    justify-content: center;
+  }
+  .location-rate {
+    top: 12vh;
+  }
+  .prices {
+    top: 15vh;
+  }
 }
+
+  /* PriceInfo Section Styles */
+
+  .price-info {
+    position: relative;
+    top: 20vh;
+    .price-wrapper {
+      height: 100%;
+      width: 100%;
+      display: flex;
+      flex-direction: row;
+      justify-content: space-evenly;
+    }
+    .card {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      align-self: center;
+      background: #f2f5fa;
+      opacity: .95;
+      border-radius: 8px;
+      border: 2px solid black;
+      padding: 8%;
+      h3 {
+        color: black;
+        font-size: 4.25vw;
+        margin-bottom: 2.5vh;
+      }
+      p {
+        margin: 2vh 0;
+        font-size: 1.5vw;
+      }
+      hr {
+        color: blue;
+        width: 55%;
+      }
+      .cost {
+        margin-bottom: 2.5vh;
+        opacity: .5;
+        font-size: 5vw
+      }
+    }
+  }
+
+  /* End PriceInfo Styles */
 
 /* Contact Section Styles */
 
