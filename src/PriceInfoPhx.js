@@ -1,11 +1,11 @@
 import React, { Component } from 'react'
 import './App.scss'
 
-class PriceInfo extends Component {
+class PriceInfoPhx extends Component {
 
     render() {
       return (
-          <section className='price-info'>
+          <section className='price-info price-info-phoenix'>
             <div className='price-wrapper'>
               <div className='card'>
                 <h3>Standard</h3>
@@ -39,4 +39,4 @@ class PriceInfo extends Component {
     }
 }
 
-export default PriceInfo
+export default PriceInfoPhx
