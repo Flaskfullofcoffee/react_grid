@@ -115,7 +115,7 @@ section {
   visibility: visible;
 }
 .inActive {
-  visibility: hidden;
+  display: none;
 }
 
 .reveal {
@@ -185,20 +185,6 @@ section {
         font-size: 2.5vw;
       }
     }
-    // .descriptor {
-    //   margin: -2.5vw;
-    //   padding: 6% 4%;
-    //     p {
-    //     font-size: 2.5vw;
-    //   }
-    // }
-    // .descriptor {
-    //   margin: -2.5vw;
-    //   padding: 12% 4%;
-    //     p {
-    //     font-size: 2.5vw;
-    //   }
-    // }
   }
 
   /* End PriceInfo Styles */
@@ -211,12 +197,135 @@ section {
   flex-direction: row;
   justify-content: center;
   .contact-info, .reservations {
-    width: 50%;
     display: flex;
     flex-direction: column;
     align-items: center;
   }
+  .contact-info {
+    width: 55%;
+    padding: 0 2.5vw;
+    position: relative;
+    top: 10vh;
+    h2 {
+      width: max-content;
+      font-size: 3.5vw;
+      padding-bottom: 5vh;
+    }
+    p {
+      text-align: justify;
+      font-size: 2vw;
+    }
+    .features {
+      display: flex;
+      padding-top: 2.5vh;
+      p {
+        padding: 0 .75vw;
+      }
+    }
+    .numbers {
+      position: relative;
+      top: 8vh;
+      text-align: center;
+      h3, li {
+        font-size: 2vw;
+        padding: .5vh 0;
+      }
+    }
+  }
+  // .form-wrapper {
+  //   width: 35%;
+  //   display: flex;
+  //   flex-direction: column;
+  //   align-items: center;
+  //     form {
+  //     display: flex;
+  //     flex-direction: column;
+  //     align-items: center;
+  //     position: relative;
+  //     top: -5vh;
+  //     padding: 1vh 0 2.5vh 0;
+      // h2 {
+      //   position: relative;
+      //   width: 100%;
+      //   text-align: center;
+      //   top: -4vh;
+      //   background: #acacac;
+      //   padding: 2vh 0;
+      //   border-top-left-radius: 2.5vw;
+      //   border-top-right-radius: 2.5vw;
+      // }
+  //     input, textarea {
+  //       border: 1px solid black;
+  //       border-radius: 5px;
+  //       padding: 1.5vh 0;
+  //       margin: 1.5vh 0;
+  //       width: 70%;
+  //     }
+  //   }
+  // }
+  .form-wrapper {
+    width: 35%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    form {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      position: relative;
+      top: -6vh;
+      padding-bottom: 2.5vh;
+      .input-field {
+        text-align: center;
+        position: relative;
+        top: -2vh;
+      }
+    }
+    h2 {
+      position: relative;
+      width: 100%;
+      text-align: center;
+      top: -4vh;
+      background: linear-gradient(to right, #00c9db 0%, #0099d6 100%);
+      padding: 2.5vh 0;
+      border-top-left-radius: 2.5vw;
+      border-top-right-radius: 2.5vw;
+      font-size: 2.5vw;
+    }
+    input, textarea {
+      border: 1px solid #ababab;
+      border-radius: .5vw;
+      padding: 1.5vh .5vw;;
+      margin: 2vh 0;
+      width: 75%;
+      &::placeholder {
+        color: grey;
+        font-size: 2vw;
+        margin-left: 1.5vw;
+      }
+    }
+    .submitBtn {
+      color: #fff;
+    }
+  }
 }
+
+/* Form specific styles */
+
+#contact-form {
+  border: none;
+  border-bottom-right-radius: 2.5vw;
+  border-bottom-left-radius: 2.5vw;
+  background: #fff;
+  width: 75%;
+}
+#submit {
+  width: 65%;
+  margin: 1.5vh 0;
+  padding: 2vh;
+}
+
+/* End form specific styles */
 
 /* Location Section Styles */
 

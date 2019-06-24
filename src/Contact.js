@@ -8,7 +8,7 @@ class Contact extends Component {
       return (
           <section className='contact'>
             <div className='contact-info'>
-              <h3>Full service gaming lounge</h3>
+              <h2>Full service gaming lounge</h2>
               <p>Enter a unique social environment that redefines the way you play video games with your friends. Over 50 PC's fill the industrial, techy space to immerse you into the most popular games from League of Legends and Call of Duty: Black Ops to Madden and Ark Survival. A full-featured refreshment station designed to keep you fueled delivers tasty made to order concessions well into the evening. Tournaments and events, high-performance gear, and a lineup of friendly and knowledgeable staff complete a one of a kind gaming experience.
               </p>
               <div className='features'>
@@ -16,13 +16,15 @@ class Contact extends Component {
                 <p>Open 24/7</p>
                 <p>Massive game library</p>
               </div>
-              <p>Have more questions</p>
-              <ul>
-                <li>Tempe: <span>(480) 367-6005</span></li>
-                <li>Phoenix: <span>(480) 367-6005</span></li>
-              </ul>
+              <div className='numbers'>
+                <h3>Have more questions</h3>
+                <ul>
+                  <li>Tempe: <span>(480) 367-6005</span></li>
+                  <li>Phoenix: <span>(480) 367-6005</span></li>
+                </ul>
+              </div>
             </div>
-            <div className='reservations'>
+            <div className='form-wrapper'>
               <ResForm />
             </div>
           </section>
