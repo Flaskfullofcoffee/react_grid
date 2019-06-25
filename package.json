@@ -2,10 +2,12 @@
   "name": "react_grid",
   "version": "0.1.0",
   "private": true,
+  "homepage": "https://flaskfullofcoffee.github.io/react_grid",
   "dependencies": {
     "axios": "^0.19.0",
     "classnames": "^2.2.6",
     "express": "^4.17.1",
+    "gh-pages": "^2.0.1",
     "nodemailer": "^6.2.1",
     "prop-types": "^15.7.2",
     "react": "^16.8.6",
