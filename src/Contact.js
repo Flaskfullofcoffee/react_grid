@@ -19,8 +19,8 @@ class Contact extends Component {
               <div className='numbers'>
                 <h3>Have more questions</h3>
                 <ul>
-                  <li>Tempe: <span>(480) 367-6005</span></li>
-                  <li>Phoenix: <span>(480) 367-6005</span></li>
+                  <li>Tempe: <span className='number'>(480) 367-6005</span></li>
+                  <li>Phoenix: <span className='number'>(480) 367-6005</span></li>
                 </ul>
               </div>
             </div>

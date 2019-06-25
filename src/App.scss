@@ -5,6 +5,7 @@ body, * {
 }
 li {
   list-style-type: none;
+  padding: .5vh 0;
 }
 .btn {
   text-align: center;
@@ -82,7 +83,7 @@ section {
 /* Rates Section Styles */
 
 .rates {
-  height: 175vh;
+  height: 125vh;
   text-align: center;
   background: firebrick;
   .title {
@@ -132,7 +133,9 @@ section {
     height: 90vh;
     top: 30vh;
     .price-wrapper {
-      height: 100%;
+      // height: 100%;
+      position: relative;
+      top: -8vh;
       width: 95%;
       padding: 0 2.5%;
       display: flex;
@@ -164,7 +167,7 @@ section {
         font-size: 1.5vw;
       }
       hr {
-        color: blue;
+        color: lightgrey;
         width: 55%;
       }
       .cost {
@@ -206,6 +209,7 @@ section {
     padding: 0 2.5vw;
     position: relative;
     top: 10vh;
+    margin-bottom: 10vh;
     h2 {
       width: max-content;
       font-size: 3.5vw;
@@ -232,37 +236,6 @@ section {
       }
     }
   }
-  // .form-wrapper {
-  //   width: 35%;
-  //   display: flex;
-  //   flex-direction: column;
-  //   align-items: center;
-  //     form {
-  //     display: flex;
-  //     flex-direction: column;
-  //     align-items: center;
-  //     position: relative;
-  //     top: -5vh;
-  //     padding: 1vh 0 2.5vh 0;
-      // h2 {
-      //   position: relative;
-      //   width: 100%;
-      //   text-align: center;
-      //   top: -4vh;
-      //   background: #acacac;
-      //   padding: 2vh 0;
-      //   border-top-left-radius: 2.5vw;
-      //   border-top-right-radius: 2.5vw;
-      // }
-  //     input, textarea {
-  //       border: 1px solid black;
-  //       border-radius: 5px;
-  //       padding: 1.5vh 0;
-  //       margin: 1.5vh 0;
-  //       width: 70%;
-  //     }
-  //   }
-  // }
   .form-wrapper {
     width: 35%;
     display: flex;
@@ -329,8 +302,217 @@ section {
 
 /* Location Section Styles */
 
-.location {
+.location-wrapper {
   background: firebrick;
+  height: 100%;
+  display: flex;
+  flex-direction: row;
+  .location-map {
+    height: 100%;
+  }
+  .location-info {
+    background: teal;
+    width: 35%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    .locations {
+      display: flex;
+      flex-direction: column;
+      position: relative;
+      top: 35vh;
+      .tempeBtn, .phoenixBtn {
+        margin: 1.5vh 0;
+      }
+    }
+    .address {
+      position: relative;
+      top: 37vh;
+      text-align: center;
+      li {
+        font-size: 2vw;
+      }
+    }
+    .socialBar {
+      position: relative;
+      top: 40vh;
+      a {
+        padding: 0 1.5vw;
+        font-size: 2.5vw;
+        color: #fff;
+      }
+    }
+  }
+  .location-map {
+    background: indigo;
+    width: 65%;
+    .map {
+      height: 100%;
+      width: 100%;
+      iframe {
+        height: 100%;
+        width: 100%;
+      }
+    }
+  }
+}
+
+/* Footer Section */
+
+footer {
+  height: 5vh;
+  background: #000;
+  position: relative;
+  top: 0vh;
+  text-align: center;
+  span {
+    position: relative;
+    top: 1vh;
+    color: #fff;
+  }
 }
 
 /* Media-queries Section */
+
+@media (max-width: 991.98px) {
+  .rates {
+    .price-info {
+      top: 32vh;
+      height: auto;
+    }
+  }
+
+  .contact {
+    .contact-info {
+      width: 45%;
+    }
+    .form-wrapper {
+      width: 50%;
+      form {
+        top: -5vh;
+      }
+    }
+  }
+}
+
+@media (max-width: 767.98px) {
+  .games {
+    display: flex;
+    flex-direction: row;
+    height: auto;
+    background: slategrey;
+    .list-row {
+      height: 100%;
+      width: 50%;
+    }
+    .list-row-top {
+      background: indigo;
+    }
+    .list-row-bottom {
+      background: tomato;
+    }
+  }
+
+  .game-list {
+    display: flex;
+    flex-direction: column;
+    .game {
+      height: 50vh;
+      width: auto;
+    }
+  }
+
+  .rates {
+    height: 105vh;
+    .price-info {
+      top: 30vh;
+    }
+  }
+
+  .contact {
+    height: auto;
+    flex-direction: column;
+    justify-content: center;
+    .contact-info, .contact-form {
+      top: 5vh;
+      width: auto;
+    }
+    .form-wrapper {
+      width: auto;
+      form {
+        top: -5vh;
+      }
+      #contact-form {
+        height: 40vh;
+        .input-field {
+          text-align: center;
+          position: relative;
+          top: -2vh;
+          height: 50%;
+          width: 50%;
+          left: -15vw;
+          display: flex;
+          flex-wrap: wrap;
+          flex-direction: row;
+          justify-content: center;
+        }
+        #submit {
+          position: relative;
+          top: 3.5vh;
+        }
+      }
+      textarea {
+        position: relative;
+        left: 32vw;
+        top: -27.25vh;
+        padding-bottom: 4vh;
+      }
+    }
+  }
+}
+
+@media (max-width: 575.98px) {
+  .games {
+    flex-direction: column;
+    .list-row {
+      height: auto;
+      width: 100%;
+    }
+  }
+
+  .rates {
+    height: 135vh;
+    .price-wrapper {
+      flex-direction: column;
+      .card {
+        width: 55%;
+        padding: 2%;
+        order: 2;
+      }
+      .descriptor {
+        order: 1;
+        margin-bottom: 4%;
+      }
+    }
+  }
+
+  .location-wrapper {
+    flex-direction: column;
+    height: 100vh;
+    .location-info, .location-map {
+      width: 100%;
+    }
+    .location-info {
+      height: 25%;
+      .locations, .address, .socialBar {
+        top: 2vh;
+      }
+      .locations {
+        flex-direction: row;
+      }
+    }
+    .location-map {
+      height: 75%;
+    }
+  }
+}
