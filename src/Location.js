@@ -22,6 +22,7 @@ class Location extends Component {
           <section className='location'>
             <div className='location-wrapper'>
               <div className='location-info'>
+              <span className='logo'></span>
                 <div className='locations'>
                   <button className={`btn tempeBtn ${highlight(0)}`} onClick={this.handleClick(0)}>Tempe</button>
                   <button className={`btn phoenixBtn ${highlight(1)}`} onClick={this.handleClick(1)}>Phoenix</button>

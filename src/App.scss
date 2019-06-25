@@ -3,6 +3,9 @@ body, * {
   margin: 0;
   padding: 0;
 }
+section {
+  height: 100vh;
+}
 li {
   list-style-type: none;
   padding: .5vh 0;
@@ -17,9 +20,16 @@ li {
   background: linear-gradient(to right, #00c9db 0%, #0099d6 100%);
   box-shadow: none;
 }
-section {
-  height: 100vh;
+.logo {
+  background-image: url(/static/media/master_logo.05281676.png);
+  position: relative;
+  top: 10vh;
+  left: 0vw;
+  height: 10vh;
+  width: 18vw;
+  margin-bottom: -10vh;
 }
+
 // BUTTON ON-FOCUS ANIMATION
 @-webkit-keyframes color-change-2x{0%{background:#19dcea}100%{background:#b22cff}}@keyframes color-change-2x{0%{background:#19dcea}100%{background:#b22cff}};
 
@@ -83,7 +93,7 @@ section {
 /* Rates Section Styles */
 
 .rates {
-  height: 125vh;
+  height: 145vh;
   text-align: center;
   background: firebrick;
   .title {
@@ -303,7 +313,7 @@ section {
 /* Location Section Styles */
 
 .location-wrapper {
-  background: firebrick;
+  // background: firebrick;
   height: 100%;
   display: flex;
   flex-direction: row;
@@ -311,11 +321,13 @@ section {
     height: 100%;
   }
   .location-info {
-    background: teal;
     width: 35%;
     display: flex;
     flex-direction: column;
     align-items: center;
+    background-image: url('./images/contacts.jpg');
+    background-size: cover;
+    color: #fff;
     .locations {
       display: flex;
       flex-direction: column;
@@ -376,6 +388,7 @@ footer {
 
 @media (max-width: 991.98px) {
   .rates {
+    height: 115vh;
     .price-info {
       top: 32vh;
       height: auto;
@@ -496,6 +509,12 @@ footer {
     }
   }
 
+
+    .submitBtn {
+      top: 5vh !important;
+    }
+
+
   .location-wrapper {
     flex-direction: column;
     height: 100vh;
@@ -509,6 +528,9 @@ footer {
       }
       .locations {
         flex-direction: row;
+        button {
+          margin: 1.5vw !important;
+        }
       }
     }
     .location-map {
