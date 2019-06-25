@@ -6,9 +6,11 @@ class Carousel extends Component {
   constructor(props) {
     super(props)
     this.state = {
-      count: 1
+      count: 1,
+      openMenu: false
     }
     this.timer = this.timer.bind(this)
+    this.menuCall = this.menuCall.bind(this)
   }
   componentDidMount() {
     let intervalId = setInterval(this.timer, 6000);
@@ -22,17 +24,45 @@ class Carousel extends Component {
     this.state.count >= 3 ? this.setState({ count: 1 }) : this.setState({ count: this.state.count +1 })
   }
 
-
+  menuCall() {
+    this.setState(prevState => {
+      return {
+        openMenu: !prevState.openMenu
+      }
+    })
+  }
 
 
     render() {
 
+      const slide = (idx) => this.state.count === idx ? 'active' : 'inActive'
+      const test = this.state.openMenu ? 'on' : 'off'
       return (
             <section className='carousel'>
               <div className='slider'>
-                <div className={`slide img${this.state.count}`}></div>
+              // <button onClick={this.menuCall}></button>
+                <span className='logo'></span>
+                <h1>{test}</h1>
+                <div className={`slide1 ${slide(1)}`}>
+                  <div className='overlay'></div>
+                  <h1>Full Service<br />Gaming Lounge</h1>
+                  <p>A premier cyber lounge, featuring 68 custom spec'd PC's</p>
+                </div>
+                <div className={`slide2 ${slide(2)}`}>
+                  <div className='overlay'></div>
+                  <h1>What makes<br />us different</h1>
+                  <p>A unique social environment & high end gaming stations</p>
+                  <button className='btn'>see more</button>
+                </div>
+                <div className={`slide3 ${slide(3)}`}>
+                  <div className='overlay'></div>
+                  <h1>Over 120 games<br />to choose from!</h1>
+                  <p>League of Legends, Overwatch, Battlefield V, World of Warcraft, Rainbow six siege, etc</p>
+                </div>
               </div>
-              <div className='dots-wrapper'></div>
+              <div className='dots-wrapper'>
+
+              </div>
             </section>
         )
     }

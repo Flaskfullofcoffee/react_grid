@@ -10,6 +10,9 @@ li {
   list-style-type: none;
   padding: .5vh 0;
 }
+a:hover {
+  color: #00c9db !important;
+}
 .btn {
   text-align: center;
   padding: 10px 30px;
@@ -17,11 +20,16 @@ li {
   border-radius: 30px;
   text-transform: uppercase;
   font-size: 1.75vw;
+  color: #fff;
   background: linear-gradient(to right, #00c9db 0%, #0099d6 100%);
   box-shadow: none;
 }
+.btn:hover {
+  cursor: pointer;
+}
 .logo {
   background-image: url(/static/media/master_logo.05281676.png);
+  background-repeat: no-repeat;
   position: relative;
   top: 10vh;
   left: 0vw;
@@ -29,7 +37,14 @@ li {
   width: 18vw;
   margin-bottom: -10vh;
 }
+h1, h2 {
+  letter-spacing: 3px;
+  font-family: 'Righteous', cursive;
+  text-transform: uppercase;
+}
 
+// Fonts
+@import url('https://fonts.googleapis.com/css?family=Righteous');
 // BUTTON ON-FOCUS ANIMATION
 @-webkit-keyframes color-change-2x{0%{background:#19dcea}100%{background:#b22cff}}@keyframes color-change-2x{0%{background:#19dcea}100%{background:#b22cff}};
 
@@ -44,6 +59,13 @@ li {
     flex-wrap: nowrap;
     overflow: hidden;
     height: 100%;
+    .logo {
+      position: absolute;
+      top: 5vh;
+      left: 2.5vw;
+      z-index: 2;
+      background-repeat: no-repeat;
+    }
     .slide {
       position: absolute;
       left: 0;
@@ -51,17 +73,56 @@ li {
       opacity: 0;
       z-index: 1;
     }
-    .img1, .img3 {
+    .slide1, .slide2, .slide3 {
       height: 100%;
-      opacity: 1;
-      background-color: indigo;
-      transition: opacity 4s;
+      width: 100%;
+      .overlay {
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        z-index: 1;
+        background: rgb(11,1,0);
+        background: linear-gradient(90deg, rgba(0,0,0,1) 22%, rgba(255,255,255,0) 100%);
+        opacity: .7;
+      }
+      h1 {
+        position: relative;
+        top: 35vh;
+        left: 10vw;
+        color: #fff;
+        font-size: 4vw;
+        z-index: 2;
+      }
+      p {
+        position: relative;
+        top: 35vh;
+        left: 10vw;
+        color: #fff;
+        font-size: 1.5vw;
+        z-index: 2;
+      }
+      button {
+        position: relative;
+        top: 40vh;
+        left: 10vw;
+        z-index: 2;
+      }
     }
-    .img2 {
-      height: 100%;
-      opacity: 1;
-      background-color: firebrick;
-      transition: opacity 4s;
+    .slide1 {
+      background-image: url('./images/slide1.png');
+      background-size: cover;
+      // background-repeat: no-repeat;
+      background-position-x: 100%;
+    }
+    .slide2 {
+      background-image: url('./images/slide2.png');
+      background-size: cover;
+      background-repeat: no-repeat;
+    }
+    .slide3 {
+      background-image: url('./images/slide3.png');
+      background-size: cover;
+      background-repeat: no-repeat;
     }
   }
 }
@@ -80,6 +141,32 @@ li {
     background: indigo;
   }
 }
+.search-link {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: #47667b;
+  background-image: linear-gradient(135deg, #47667b 0%, #1e283c 65%, #000000 100%);
+  h2 {
+    position: relative;
+    top: 5vh;
+    text-align: center;
+    color: #fff;
+    font-size: 4vw;
+    &:after {
+      content: "";
+      display: block;
+      margin: 2vh auto;
+      height: .5vh;
+      width: 15vw;
+      background: #00c9db;
+    }
+  }
+  .searchBtn {
+    position: relative;
+    top: 10vh;
+  }
+}
 
 .game-list {
   display: flex;
@@ -90,19 +177,74 @@ li {
   }
 }
 
+.card1 {
+  background-image: url('./images/apex-legends.png');
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+.card2 {
+  background-image: url('./images/battlefieldV.jpg');
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+.card3 {
+  background-image: url('./images/rainbowsix.jpg');
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+.card4 {
+  background-image: url('./images/fortnite.jpg');
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+.card5 {
+  background-image: url('./images/overwatch.jpg');
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+.card6 {
+  background-image: url('./images/league.jpg');
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+.card7 {
+  background-image: url('./images/cs-go.jpg');
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+
 /* Rates Section Styles */
 
 .rates {
   height: 145vh;
   text-align: center;
-  background: firebrick;
+  background-image: url('./images/background.jpg');
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-position: 20%;
   .title {
     position: relative;
     top: 8vh;
-    width: 15%;
-    font-size: 4vw;
-    border-bottom: 4px solid black;
-    display: inline-block;
+    font-size: 4.25vw;
+    color: #fff;
+    text-align: center;
+    &:after {
+      content: "";
+      display: block;
+      margin: 2vh auto;
+      height: .5vh;
+      width: 20vw;
+      background: #00c9db;
+    }
   }
   .location-rate, .prices {
     position: relative;
@@ -205,7 +347,8 @@ li {
 /* Contact Section Styles */
 
 .contact {
-  background: slategrey;
+  background-color: #47667b;
+  background-image: linear-gradient(135deg, #47667b 0%, #1e283c 65%, #000000 100%);
   display: flex;
   flex-direction: row;
   justify-content: center;
@@ -220,6 +363,7 @@ li {
     position: relative;
     top: 10vh;
     margin-bottom: 10vh;
+    color: #fff;
     h2 {
       width: max-content;
       font-size: 3.5vw;
@@ -232,14 +376,23 @@ li {
     .features {
       display: flex;
       padding-top: 2.5vh;
+      i {
+        position: relative;
+        top: 1.5vh;
+        left: 1.5vw;
+        font-size: 3vw;
+      }
       p {
-        padding: 0 .75vw;
+        padding: 0 2.75vw;
       }
     }
     .numbers {
       position: relative;
-      top: 8vh;
+      top: 5vh;
       text-align: center;
+      .number {
+        color: #00c9db;
+      }
       h3, li {
         font-size: 2vw;
         padding: .5vh 0;
@@ -388,7 +541,7 @@ footer {
 
 @media (max-width: 991.98px) {
   .rates {
-    height: 115vh;
+    height: 125vh;
     .price-info {
       top: 32vh;
       height: auto;
