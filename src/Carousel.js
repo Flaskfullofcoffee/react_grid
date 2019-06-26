@@ -36,13 +36,12 @@ class Carousel extends Component {
     render() {
 
       const slide = (idx) => this.state.count === idx ? 'active' : 'inActive'
-      const test = this.state.openMenu ? 'on' : 'off'
+      const state = this.state.openMenu ? 'on' : 'off'
       return (
             <section className='carousel'>
               <div className='slider'>
-              // <button onClick={this.menuCall}></button>
+              <i class="fas fa-bars" className={`nav ${state}`} onClick={this.menuCall}></i>
                 <span className='logo'></span>
-                <h1>{test}</h1>
                 <div className={`slide1 ${slide(1)}`}>
                   <div className='overlay'></div>
                   <h1>Full Service<br />Gaming Lounge</h1>
