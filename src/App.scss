@@ -31,7 +31,7 @@ a:hover {
   cursor: pointer;
 }
 .logo {
-  background-image: url(/static/media/master_logo.05281676.png);
+  background-image: url('./images/master_logo.png');
   background-repeat: no-repeat;
   position: relative;
   top: 10vh;
@@ -60,30 +60,47 @@ h1, h2 {
   color: #fff;
   z-index: 2;
   font-size: 3vw;
-  display: none;
+  &:hover {
+    font-size: 3.5vw;
+    cursor: pointer;
+  }
 }
 .navMenu {
   position: absolute;
   top: 0;
   right: 0;
   background: #fff;
-  height: 50%;
-  width: 25%;
-  border-radius: 6px;
+  height: 15%;
+  width: 65%;
+  border-radius: 15px;
   opacity: .75;
   display: flex;
-  flex-direction: column;
-  justify-content: space-evenly;
+  flex-direction: row;
+  justify-content: space-around;
   align-items: center;
-  a {
+  z-index: 2;
+  .nav-link {
     font-size: 2.5vw;
     font-family: 'Righteous', cursive;
     color: #00c9db;
+    padding: 0 1.5vh;
+    z-index: 1;
+    &:hover {
+      color: #000 !important;
+      font-size: 3vw;
+      transition: .5s;
+    }
   }
-  a:hover {
-    color: #000 !important;
-    font-size: 3.5vw;
-    transition: 1s;
+}
+.returnBtn {
+  position: relative;
+  transform: rotate(180deg);
+  left: .5vw;
+  font-size: 2.5vw;
+  color: #00c9db;
+  &:hover {
+    color: #000;
+    cursor: pointer;
   }
 }
 
@@ -138,11 +155,12 @@ h1, h2 {
         color: #fff;
         font-size: 1.5vw;
         z-index: 2;
+        display: inline;
       }
       button {
         position: relative;
-        top: 40vh;
-        left: 10vw;
+        top: 42vh;
+        left: -30vw;
         z-index: 2;
       }
     }

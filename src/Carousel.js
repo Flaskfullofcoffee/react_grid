@@ -2,6 +2,7 @@ import React, { Component } from 'react'
 import {CSSTransition} from 'react-transition-group'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faBars } from '@fortawesome/free-solid-svg-icons'
+import { faBackward } from '@fortawesome/free-solid-svg-icons'
 import './App.scss'
 
 class Carousel extends Component {
@@ -38,21 +39,25 @@ class Carousel extends Component {
     render() {
 
       const slide = (idx) => this.state.count === idx ? 'active' : 'inActive'
-      const state = this.state.openMenu ? 'on' : 'off'
+      const openMenu = this.state.openMenu ? 'active' : 'inActive'
+      const closedMenu = !this.state.openMenu ? 'active' : 'inActive'
       const menu = <FontAwesomeIcon icon={faBars} />
+      const backtrack = <FontAwesomeIcon icon={faBackward} />
+
       return (
             <section className='carousel'>
               <div className='slider'>
+              <span className='logo'></span>
               {/* <i class="fas fa-bars" className={`nav ${state}`} onClick={this.menuCall}></i> */}
-              <span className='hamburger'>{menu}</span>
-              <div className='navMenu'>
-                <a class="nav-link" href="index.html">Home</a>
-                <a class="nav-link" href="#games_section">Games</a>
-                <a class="nav-link" href="#rates_section">Pricing</a>
-                <a class="nav-link" href="#reservation_section">RSVP</a>
-                <a class="nav-link" href="#location_section">Contact</a>
+              <span className={`hamburger ${closedMenu}`} onClick={this.menuCall}>{menu}</span>
+              <div className={`navMenu ${openMenu}`}>
+                <span className='returnBtn' onClick={this.menuCall}>{backtrack}</span>
+                <a className="nav-link" href="index.html">Home</a>
+                <a className="nav-link" href="#games_section">Games</a>
+                <a className="nav-link" href="#rates_section">Pricing</a>
+                <a className="nav-link" href="#reservation_section">RSVP</a>
+                <a className="nav-link" href="#location_section">Contact</a>
               </div>
-                <span className='logo'></span>
                 <div className={`slide1 ${slide(1)}`}>
                   <div className='overlay'></div>
                   <h1>Full Service<br />Gaming Lounge</h1>
