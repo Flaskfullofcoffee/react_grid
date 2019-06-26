@@ -7,7 +7,7 @@ class Games extends Component {
 
 render() {
   return (
-    <section className='games'>
+    <section id='games_section' className='games'>
       <div className='list-row list-row-top'>
         <div className='game-list'>
           <div className='game search-link'>

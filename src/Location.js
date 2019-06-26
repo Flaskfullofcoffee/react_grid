@@ -19,7 +19,7 @@ class Location extends Component {
       const selector = (idx) => this.state.currentIdx === idx ? 'active' : 'inActive';
       const highlight = (idx) => this.state.currentIdx === idx ? 'current' : null;
       return (
-          <section className='location'>
+          <section id='location_section' className='location'>
             <div className='location-wrapper'>
               <div className='location-info'>
               <span className='logo'></span>

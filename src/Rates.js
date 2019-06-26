@@ -21,7 +21,7 @@ class Rates extends Component {
       const location = (idx) => this.state.activeIdx === idx ? 'active' : 'inActive';
       const highlight = (idx) => this.state.activeIdx === idx ? 'current' : null;
       return (
-          <section className='rates'>
+          <section id='rates_section' className='rates'>
             <h2 className='title'>Rates</h2>
             <div className='location-rate'>
               <button className={`btn tempe ${highlight(0)}`} onClick={this.handleClick(0)}>Tempe</button>

@@ -1,5 +1,7 @@
 import React, { Component } from 'react'
 import {CSSTransition} from 'react-transition-group'
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+import { faBars } from '@fortawesome/free-solid-svg-icons'
 import './App.scss'
 
 class Carousel extends Component {
@@ -37,10 +39,19 @@ class Carousel extends Component {
 
       const slide = (idx) => this.state.count === idx ? 'active' : 'inActive'
       const state = this.state.openMenu ? 'on' : 'off'
+      const menu = <FontAwesomeIcon icon={faBars} />
       return (
             <section className='carousel'>
               <div className='slider'>
-              <i class="fas fa-bars" className={`nav ${state}`} onClick={this.menuCall}></i>
+              {/* <i class="fas fa-bars" className={`nav ${state}`} onClick={this.menuCall}></i> */}
+              <span className='hamburger'>{menu}</span>
+              <div className='navMenu'>
+                <a class="nav-link" href="index.html">Home</a>
+                <a class="nav-link" href="#games_section">Games</a>
+                <a class="nav-link" href="#rates_section">Pricing</a>
+                <a class="nav-link" href="#reservation_section">RSVP</a>
+                <a class="nav-link" href="#location_section">Contact</a>
+              </div>
                 <span className='logo'></span>
                 <div className={`slide1 ${slide(1)}`}>
                   <div className='overlay'></div>
