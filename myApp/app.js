@@ -51,6 +51,7 @@ app.post("/resForm", function(req, resp){
     }
     console.log("Message sent: %s", info.messageId);
     console.log("Preview URL: %s", nodemailer.getTestMessageUrl(info));
+
   })
 });
 
