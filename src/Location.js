@@ -22,12 +22,16 @@ class Location extends Component {
           <section id='location_section' className='location'>
             <div className='location-wrapper'>
               <div className='location-info'>
-              <span className='logo'></span>
                 <div className='locations'>
                   <button className={`btn tempeBtn ${highlight(0)}`} onClick={this.handleClick(0)}>Tempe</button>
                   <button className={`btn phoenixBtn ${highlight(1)}`} onClick={this.handleClick(1)}>Phoenix</button>
                 </div>
                 <div className={`${selector(0)} address`}>
+                  <div className='hours'>
+                    <h3>Hours</h3>
+                    <span>Sun-Fri: 12pm - 4am</span><br />
+                    <span>Saturday: 24hrs</span>
+                  </div>
                   <ul>
                     <li> 1840 E Warner Rd Tempe,<br /> AZ 85284 STE 116</li>
                     <li>480.378.6005</li>
@@ -35,9 +39,13 @@ class Location extends Component {
                   </ul>
                 </div>
                 <div className={`${selector(1)} address`}>
+                  <div className='hours'>
+                    <h3>Hours</h3>
+                    <span>Mon-Sun: 12pm - 2am</span>
+                  </div>
                   <ul>
                     <li>4925 W Bell Rd. Phoenix,<br /> AZ 85308 STE C109</li>
-                    <li>480.378.6005</li>
+                    <li>480.999.3076</li>
                     <li>info@thegridcl.com</li>
                   </ul>
                 </div>

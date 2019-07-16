@@ -20,7 +20,7 @@ class Contact extends Component {
                 <h3>Have more questions</h3>
                 <ul>
                   <li>Tempe: <span className='number'>(480) 367-6005</span></li>
-                  <li>Phoenix: <span className='number'>(480) 367-6005</span></li>
+                  <li>Phoenix: <span className='number'>(480) 999-3076</span></li>
                 </ul>
               </div>
             </div>
