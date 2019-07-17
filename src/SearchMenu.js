@@ -13,11 +13,6 @@ class SearchMenu extends Component {
         addGames(gameList);
         let searchBox = document.getElementById('searchbar');
         searchBox.addEventListener('keyup', filterGames(gameList))
-        // for (var i = 0; i < gameList.length; i++) {
-        //   addGame(gameList[i]);
-        // }
-        // let searchBtn = document.querySelector('.searchBtn');
-        // searchBtn.addEventListener('click', search(gameList));
       })
     // function for adding game
       let addGames = (gameList)  => {

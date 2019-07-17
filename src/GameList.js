@@ -28,9 +28,9 @@ class GameList extends Component {
     const closeSearch = this.state.gameList ? 'close' : 'open'
     let title;
      if (openSearch === 'close') {
-      title = <h2>Our<br />Games</h2>;
+      title = <h2 className='closed-title'>Our<br />Games</h2>;
     } else {
-        title = <h2>Game List</h2>;
+        title = <h2 className='open-title'>Game List</h2>;
     }
     let display;
       if (openSearch === 'close') {
@@ -49,19 +49,3 @@ class GameList extends Component {
 }
 
 export default GameList
-
-
-// const openSearch = this.state.gameList ? 'open' : 'close'
-// const hide = !openSearch ? 'hide' : 'reveal'
-// const closeSearch = this.state.gameList ? 'close' : 'open'
-// const backtrack = <FontAwesomeIcon className={hide} icon={faBackward} />
-//
-// let display;
-//   if (openSearch === 'close') {
-//     display = <button onClick={this.openSearch} className={`btn searchBtn ${hide}`}>View more</button> ;
-//   } else {
-//     display = <GameList />
-//   }
-
-// <h2>Game List</h2>
-// <input id="searchbar" className='searchBar' placeholder="SEARCH" type="text" value="" autocomplete="off" />

@@ -107,6 +107,9 @@ h1, h2 {
 }
 
 /* Carousel Section Styles */
+.slides {
+  // overflow: hidden;
+}
 .slides > section {
   position: absolute;
   width: 100vh;
@@ -658,7 +661,7 @@ footer {
 
 @media (max-width: 991.98px) {
   .rates {
-    height: 125vh;
+    height: 135vh;
     .price-info {
       top: 32vh;
       height: auto;
@@ -668,6 +671,9 @@ footer {
   .contact {
     .contact-info {
       width: 45%;
+      h2 {
+        width: 100%;
+      }
     }
     .form-wrapper {
       width: 50%;
@@ -679,6 +685,20 @@ footer {
 }
 
 @media (max-width: 767.98px) {
+  .hamburger {
+    font-size: 4vw;
+  }
+  .slides {
+    h1 {
+      font-size: 4vw;
+    }
+    p {
+      font-size: 2vw;
+    }
+    button {
+      left: -42vw;
+    }
+  }
   .games {
     display: flex;
     flex-direction: row;
@@ -702,22 +722,36 @@ footer {
     .game {
       height: 50vh;
       width: auto;
+      .closed-title {
+        font-size: 4.5vw;
+        top: 8vh;
+      }
+      button {
+        font-size: 3vw;
+        top: 12vh;
+      }
     }
   }
 
   .rates {
-    height: 105vh;
+    height: 110vh;
+    .title {
+      font-size: 4.5vw;
+    }
+    .btn {
+      font-size: 2.5vw;
+    }
     .price-info {
       top: 30vh;
     }
   }
 
   .contact {
-    height: auto;
+    height: 110vh;
     flex-direction: column;
     justify-content: center;
-    .contact-info, .contact-form {
-      top: 5vh;
+    .contact-info {
+      top: -2vh;
       width: auto;
     }
     .form-wrapper {
@@ -727,6 +761,7 @@ footer {
       }
       #contact-form {
         height: 40vh;
+        top: 2vh;
         .input-field {
           text-align: center;
           position: relative;
@@ -738,10 +773,13 @@ footer {
           flex-wrap: wrap;
           flex-direction: row;
           justify-content: center;
+          #comments {
+            top: -28vh;
+          }
         }
         #submit {
           position: relative;
-          top: 3.5vh;
+          top: 4vh;
         }
       }
       textarea {
@@ -754,17 +792,89 @@ footer {
   }
 }
 
-@media (max-width: 575.98px) {
-  .games {
-    flex-direction: column;
-    .list-row {
-      height: auto;
-      width: 100%;
+
+.location-info {
+  .btn {
+    font-size: 3vw;
+  }
+  .address {
+    position: absolute;
+    margin-top: 5vh;
+  }
+  .socialBar {
+    margin-top: -2vh;
+    a {
+      font-size: 3vw !important;
     }
   }
+}
+
+
+@media (max-width: 575.98px) {
+  .slides {
+    .logo {
+      width: 25vh;;
+    }
+    .hamburger {
+      font-size: 5vw;
+    }
+  }
+.slide {
+  h1 {
+    font-size: 5vw;
+    max-width: 80%;
+  }
+  p {
+    font-size: 3vw;
+  }
+}
+.game-list {
+  .game {
+    closed-title {
+      top: 10vh;
+      font-size: 5.5vw;
+    }
+    .btn {
+      font-size: 4vw;
+    }
+  }
+}
+h2.open-title {
+  top: 4vh;
+  font-size: 5vw;
+}
+.gameList {
+  .searchBar {
+    position: relative;
+    top: -2vh;
+    font-size: 4vw;
+  }
+}
+.list-wrapper {
+  #game-list {
+    li {
+      font-size: 3.5vw;
+    }
+  }
+}
+
+
+.games {
+  flex-direction: column;
+  .list-row {
+    height: auto;
+    width: 100%;
+  }
+}
 
   .rates {
-    height: 135vh;
+    height: 145vh;
+    .prices {
+      flex-wrap: wrap;
+      .btn {
+        margin: 1vh;
+      }
+    }
     .price-wrapper {
       flex-direction: column;
       .card {
@@ -779,32 +889,56 @@ footer {
     }
   }
 
+.contact .contact-info .features i {
+  top: 0vh;
+}
 
-    .submitBtn {
-      top: 5vh !important;
+#contact-form {
+  .input-field {
+    input {
+      padding: 1.25vh;
+      width: 70%;
     }
-
-
-  .location-wrapper {
-    flex-direction: column;
-    height: 100vh;
-    .location-info, .location-map {
-      width: 100%;
+    #comments {
+      top: -27vh !important;
+      height: 17vh;
     }
-    .location-info {
-      height: 25%;
-      .locations, .address, .socialBar {
-        top: 2vh;
+  }
+}
+
+
+
+.location-wrapper {
+  flex-direction: column;
+  height: 100vh;
+  .location-info, .location-map {
+    width: 100%;
+  }
+  .location-info {
+    height: auto;
+    .locations, .address, .socialBar {
+      top: 4vh;
+    }
+    .locations {
+      flex-direction: row;
+      button {
+        margin: 1.5vw !important;
       }
-      .locations {
-        flex-direction: row;
-        button {
-          margin: 1.5vw !important;
-        }
+    }
+    .socialBar {
+      position: relative;
+      top: -5vh;
+      a {
+        font-size: 4vw !important;
       }
     }
-    .location-map {
+  }
+  .location-map {
       height: 75%;
     }
   }
+}
+footer {
+  position: relative;
+  top: 27vh;
 }
