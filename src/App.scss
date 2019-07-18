@@ -111,7 +111,7 @@ h1, h2 {
   // overflow: hidden;
 }
 .slides > section {
-  position: absolute;
+  position: relative;
   width: 100vh;
 }
 .slide, .slide1, .slide2, .slide3 {
@@ -340,7 +340,7 @@ h1, h2 {
 /* Rates Section Styles */
 
 .rates {
-  height: 145vh;
+  height: 150vh;
   text-align: center;
   background-image: url('./images/background.jpg');
   background-size: cover;
@@ -606,6 +606,7 @@ h1, h2 {
       top: 10vh;
       .tempeBtn, .phoenixBtn {
         margin: 1.5vh 0;
+        font-size: 2vw;
       }
     }
     .address {
@@ -614,16 +615,16 @@ h1, h2 {
       text-align: center;
       height: 40vh;
       .hours, li {
-        font-size: 2.5vw;
+        font-size: 2vw;
         padding: 1.5vh 0;
       }
     }
     .socialBar {
       position: relative;
-      top: 30vh;
+      top: 28vh;
       a {
         padding: 0 1.5vw;
-        font-size: 2.5vw;
+        font-size: 2vw;
         color: #fff;
       }
     }
@@ -811,53 +812,43 @@ footer {
 
 
 @media (max-width: 575.98px) {
-  .slides {
-    .logo {
-      width: 25vh;;
+.slides {
+  .logo {
+    height: 12vh;
+    width: 34vw;
+  }
+  .hamburger {
+    font-size: 5.5vw;
+  }
+  .slide {
+    h1 {
+      font-size: 4.5vw;
     }
-    .hamburger {
-      font-size: 5vw;
-    }
-  }
-.slide {
-  h1 {
-    font-size: 5vw;
-    max-width: 80%;
-  }
-  p {
-    font-size: 3vw;
-  }
-}
-.game-list {
-  .game {
-    closed-title {
-      top: 10vh;
-      font-size: 5.5vw;
+    p {
+      font-size: 3vw;
     }
     .btn {
-      font-size: 4vw;
-    }
-  }
-}
-h2.open-title {
-  top: 4vh;
-  font-size: 5vw;
-}
-.gameList {
-  .searchBar {
-    position: relative;
-    top: -2vh;
-    font-size: 4vw;
-  }
-}
-.list-wrapper {
-  #game-list {
-    li {
-      font-size: 3.5vw;
+      font-size: 3vw;
+      top: 38vh;
+      left: 8vw;
     }
   }
 }
 
+.navMenu {
+  flex-direction: column;
+  width: 30%;
+  height: 75%;
+  .nav-link {
+    font-size: 4vw;
+    &:hover {
+      font-size: 4vw;
+    }
+  }
+  .returnBtn {
+    font-size: 4vw;
+  }
+}
 
 .games {
   flex-direction: column;
@@ -866,79 +857,199 @@ h2.open-title {
     width: 100%;
   }
 }
-
-  .rates {
-    height: 145vh;
-    .prices {
-      flex-wrap: wrap;
-      .btn {
-        margin: 1vh;
-      }
+.game-list {
+  .game {
+    .return {
+      top: 3vh;
+      font-size: 1.75rem;
     }
-    .price-wrapper {
-      flex-direction: column;
-      .card {
-        width: 55%;
-        padding: 2%;
-        order: 2;
-      }
-      .descriptor {
-        order: 1;
-        margin-bottom: 4%;
-      }
+    h2.closed-title {
+      top: 8vh;
+      font-size: 3rem;
     }
-  }
-
-.contact .contact-info .features i {
-  top: 0vh;
-}
-
-#contact-form {
-  .input-field {
-    input {
-      padding: 1.25vh;
-      width: 70%;
+    .btn {
+      font-size: 3.5vw;
     }
-    #comments {
-      top: -27vh !important;
-      height: 17vh;
+    h2.open-title {
+      top: 2.5vh;
+      font-size: 2.5rem;
     }
-  }
-}
-
-
-
-.location-wrapper {
-  flex-direction: column;
-  height: 100vh;
-  .location-info, .location-map {
-    width: 100%;
-  }
-  .location-info {
-    height: auto;
-    .locations, .address, .socialBar {
-      top: 4vh;
-    }
-    .locations {
-      flex-direction: row;
-      button {
-        margin: 1.5vw !important;
-      }
-    }
-    .socialBar {
+    input.searchBar {
       position: relative;
-      top: -5vh;
-      a {
-        font-size: 4vw !important;
-      }
+      top: -2vh;
+      font-size: 3vw;
     }
   }
-  .location-map {
-      height: 75%;
+  .list-wrapper {
+    #game-list li {
+      font-size: 1.25rem;
     }
   }
 }
-footer {
-  position: relative;
-  top: 27vh;
+
+.rates {
+  height: 150vh;
+  .title {
+    font-size: 2rem;
+  }
+  .location-rate .btn {
+    font-size: 1.05rem;
+  }
+  .prices {
+    flex-wrap: wrap;
+    .btn {
+      margin: 1vh;
+    }
+    button.btn.twenty-four {
+      position: relative;
+      left: 2vw;
+    }
+  }
+  .price-info .price-wrapper {
+    flex-direction: column;
+    .card {
+      width: 55%;
+      padding: 2%;
+      order: 2;
+      p {
+        font-size: 1.05rem;
+      }
+    }
+    .descriptor {
+      order: 1;
+      margin-bottom: 4%;
+    }
+  }
+}
+
+//   .slides {
+//     .logo {
+//       width: 25vh;;
+//     }
+//     .hamburger {
+//       font-size: 5vw;
+//     }
+//   }
+// .slide {
+//   h1 {
+//     font-size: 5vw;
+//     max-width: 80%;
+//   }
+//   p {
+//     font-size: 3vw;
+//   }
+// }
+// .game-list {
+//   .game {
+//     closed-title {
+//       top: 10vh;
+//       font-size: 5.5vw;
+//     }
+//     .btn {
+//       font-size: 4vw;
+//     }
+//   }
+// }
+// h2.open-title {
+//   top: 4vh;
+//   font-size: 5vw;
+// }
+// .gameList {
+//   .searchBar {
+//     position: relative;
+//     top: -2vh;
+//     font-size: 4vw;
+//   }
+// }
+// .list-wrapper {
+//   #game-list {
+//     li {
+//       font-size: 3.5vw;
+//     }
+//   }
+// }
+//
+//
+// .games {
+//   flex-direction: column;
+//   .list-row {
+//     height: auto;
+//     width: 100%;
+//   }
+// }
+//
+//   .rates {
+//     height: 145vh;
+//     .prices {
+//       flex-wrap: wrap;
+//       .btn {
+//         margin: 1vh;
+//       }
+//     }
+//     .price-wrapper {
+//       flex-direction: column;
+      // .card {
+      //   width: 55%;
+      //   padding: 2%;
+      //   order: 2;
+      // }
+      // .descriptor {
+      //   order: 1;
+      //   margin-bottom: 4%;
+      // }
+//     }
+//   }
+//
+// .contact .contact-info .features i {
+//   top: 0vh;
+// }
+//
+// #contact-form {
+//   .input-field {
+//     input {
+//       padding: 1.25vh;
+//       width: 70%;
+//     }
+//     #comments {
+//       top: -27vh !important;
+//       height: 17vh;
+//     }
+//   }
+// }
+//
+//
+//
+// .location-wrapper {
+//   flex-direction: column;
+//   height: 100vh;
+//   .location-info, .location-map {
+//     width: 100%;
+//   }
+//   .location-info {
+//     height: auto;
+//     .locations, .address, .socialBar {
+//       top: 4vh;
+//     }
+//     .locations {
+//       flex-direction: row;
+//       button {
+//         margin: 1.5vw !important;
+//       }
+//     }
+//     .socialBar {
+//       position: relative;
+//       top: -5vh;
+//       a {
+//         font-size: 4vw;
+//       }
+//     }
+//   }
+//   .location-map {
+//       height: 75%;
+//     }
+//   }
+//   footer {
+//     position: relative;
+//     top: 27vh;
+//   }
 }
