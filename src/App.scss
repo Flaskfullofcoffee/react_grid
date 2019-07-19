@@ -815,20 +815,24 @@ footer {
 .slides {
   .logo {
     height: 12vh;
-    width: 34vw;
+    width: 45vw;
   }
   .hamburger {
     font-size: 5.5vw;
   }
-  .slide {
+  .slide > div {
+    display: flex;
+    flex-direction: column;
     h1 {
-      font-size: 4.5vw;
+      font-size: 2rem;
     }
     p {
-      font-size: 3vw;
+      font-size: 1.05rem;
+      width: 90%;
     }
     .btn {
       font-size: 3vw;
+      width: 35%;
       top: 38vh;
       left: 8vw;
     }
@@ -888,7 +892,7 @@ footer {
 }
 
 .rates {
-  height: 150vh;
+  height: 175vh;
   .title {
     font-size: 2rem;
   }
@@ -899,6 +903,7 @@ footer {
     flex-wrap: wrap;
     .btn {
       margin: 1vh;
+      font-size: 1.05rem;
     }
     button.btn.twenty-four {
       position: relative;
@@ -923,14 +928,16 @@ footer {
 }
 
 .contact {
-  height: 115vh;
+  height: 150vh;
   .contact-info {
+    top: -8vh;
     max-width: 100%;
     h2 {
       font-size: 1.5rem;
     }
     p {
-      font-size: 1rem;
+      padding: 0 1vh;
+      font-size: 1.05rem;
     }
     .numbers h3, .numbers li {
       font-size: 1.05rem;
@@ -940,14 +947,23 @@ footer {
 
 .contact .form-wrapper #contact-form {
   top: 0vh;
+  height: 35vh;
   .input-field {
+    input {
+      padding: 1vh;
+      margin: 2vh 5vw;
+      width: 70%;
+    }
     #comments {
-      top: -27.5vh;
-      padding-bottom: 3vh;
+      top: -25vh;
+      height: 15.15vh;
     }
   }
   #submit {
+    font-size: 1.05rem;
     top: 5vh;
+    width: 50%;
+    padding: 1vh;
   }
 }
 
@@ -977,7 +993,7 @@ footer {
       width: 50%;
       top: -4vh;
       .hours, li {
-        font-size: 1.05rem;
+        font-size: 1rem;
       }
     }
     .socialBar {
