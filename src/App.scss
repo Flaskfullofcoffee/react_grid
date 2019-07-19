@@ -805,7 +805,7 @@ footer {
   .socialBar {
     margin-top: -2vh;
     a {
-      font-size: 3vw !important;
+      font-size: 3vw;
     }
   }
 }
@@ -921,6 +921,88 @@ footer {
     }
   }
 }
+
+.contact {
+  height: 115vh;
+  .contact-info {
+    max-width: 100%;
+    h2 {
+      font-size: 1.5rem;
+    }
+    p {
+      font-size: 1rem;
+    }
+    .numbers h3, .numbers li {
+      font-size: 1.05rem;
+    }
+  }
+}
+
+.contact .form-wrapper #contact-form {
+  top: 0vh;
+  .input-field {
+    #comments {
+      top: -27.5vh;
+      padding-bottom: 3vh;
+    }
+  }
+  #submit {
+    top: 5vh;
+  }
+}
+
+.location-wrapper {
+  flex-direction: column;
+  .location-info {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    flex-wrap: wrap;
+    height: 35%;
+    width: 100%;
+    .locations {
+      height: auto;
+      width: 50%;
+      position: relative;
+      top: -6vh;
+      align-items: flex-end;
+      .btn {
+        width: 80%;
+        font-size: 1.05rem;
+      }
+    }
+    .address {
+      position: relative;
+      height: auto;
+      width: 50%;
+      top: -4vh;
+      .hours, li {
+        font-size: 1.05rem;
+      }
+    }
+    .socialBar {
+      position: relative;
+      top: -8vh;
+      left: -18vw;
+      ul a {
+        font-size: 1.5rem;
+        margin: 1vh;
+      }
+    }
+  }
+  .location-map {
+    height: 65%;
+    width: 100%;
+  }
+}
+
+
+
+
+
+
+
+
 
 //   .slides {
 //     .logo {
