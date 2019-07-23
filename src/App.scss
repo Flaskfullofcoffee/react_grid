@@ -139,10 +139,11 @@ h1, h2 {
     display: inline;
   }
   button {
-    position: relative;
-    top: 42vh;
-    left: -30vw;
-    z-index: 2;
+    display: none;
+    // position: relative;
+    // top: 42vh;
+    // left: -30vw;
+    // z-index: 2;
   }
 }
 .slide1 {
