@@ -1,11 +1,11 @@
 self.__precacheManifest = [
   {
-    "revision": "6322228b8c3f8d2d4909eddc4e4661ea",
-    "url": "/react_grid/static/media/battlefieldV.6322228b.jpg"
+    "revision": "60929f5c59d38e04029657b4caa17b87",
+    "url": "/react_grid/static/media/slide2.60929f5c.png"
   },
   {
-    "revision": "272ccc072bb3385cb929",
-    "url": "/react_grid/static/css/main.dada6ce9.chunk.css"
+    "revision": "231bea5c7ed3f48cb33f",
+    "url": "/react_grid/static/css/main.bf507bc2.chunk.css"
   },
   {
     "revision": "1a178a711136a5de10df",
@@ -24,10 +24,6 @@ self.__precacheManifest = [
     "url": "/react_grid/static/media/slide1.d0771043.png"
   },
   {
-    "revision": "60929f5c59d38e04029657b4caa17b87",
-    "url": "/react_grid/static/media/slide2.60929f5c.png"
-  },
-  {
     "revision": "2a625eb761c7745aa8230e1a933cc594",
     "url": "/react_grid/static/media/apex-legends.2a625eb7.png"
   },
@@ -36,8 +32,16 @@ self.__precacheManifest = [
     "url": "/react_grid/static/media/slide3.e41d607c.png"
   },
   {
-    "revision": "272ccc072bb3385cb929",
+    "revision": "6322228b8c3f8d2d4909eddc4e4661ea",
+    "url": "/react_grid/static/media/battlefieldV.6322228b.jpg"
+  },
+  {
+    "revision": "231bea5c7ed3f48cb33f",
     "url": "/react_grid/static/js/main.a1655837.chunk.js"
+  },
+  {
+    "revision": "7f04d102c7f142565d5adc62a0653560",
+    "url": "/react_grid/static/media/rainbowsix.7f04d102.jpg"
   },
   {
     "revision": "0cc18784c2ff4308737a666dcef57014",
@@ -48,8 +52,8 @@ self.__precacheManifest = [
     "url": "/react_grid/static/media/overwatch.254e8b84.jpg"
   },
   {
-    "revision": "7f04d102c7f142565d5adc62a0653560",
-    "url": "/react_grid/static/media/rainbowsix.7f04d102.jpg"
+    "revision": "0c982ee560c0f1af2841555b23223644",
+    "url": "/react_grid/static/media/league.0c982ee5.jpg"
   },
   {
     "revision": "f92ceb84346981081c1dccbc54054025",
@@ -60,15 +64,11 @@ self.__precacheManifest = [
     "url": "/react_grid/static/media/background.e1482e7c.jpg"
   },
   {
-    "revision": "0c982ee560c0f1af2841555b23223644",
-    "url": "/react_grid/static/media/league.0c982ee5.jpg"
-  },
-  {
     "revision": "fc251160fcc16fce72036eb77f07aba7",
     "url": "/react_grid/static/media/location.fc251160.jpg"
   },
   {
-    "revision": "0f5001645b8737fbb9cba5e8709c0056",
+    "revision": "57c67b4ae008691e5bcca9b4f6ed84a3",
     "url": "/react_grid/index.html"
   }
 ];
