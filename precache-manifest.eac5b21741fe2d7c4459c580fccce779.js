@@ -4,8 +4,8 @@ self.__precacheManifest = [
     "url": "/react_grid/static/media/battlefieldV.6322228b.jpg"
   },
   {
-    "revision": "3c3543cbb01ea9699fcf",
-    "url": "/react_grid/static/css/main.4f492786.chunk.css"
+    "revision": "ec1d40762938764b9367",
+    "url": "/react_grid/static/css/main.cd7c9041.chunk.css"
   },
   {
     "revision": "1a178a711136a5de10df",
@@ -28,16 +28,16 @@ self.__precacheManifest = [
     "url": "/react_grid/static/media/slide2.60929f5c.png"
   },
   {
-    "revision": "2a625eb761c7745aa8230e1a933cc594",
-    "url": "/react_grid/static/media/apex-legends.2a625eb7.png"
-  },
-  {
     "revision": "e41d607c864f21065a21ba6b1c797799",
     "url": "/react_grid/static/media/slide3.e41d607c.png"
   },
   {
-    "revision": "3c3543cbb01ea9699fcf",
-    "url": "/react_grid/static/js/main.a1655837.chunk.js"
+    "revision": "2a625eb761c7745aa8230e1a933cc594",
+    "url": "/react_grid/static/media/apex-legends.2a625eb7.png"
+  },
+  {
+    "revision": "ec1d40762938764b9367",
+    "url": "/react_grid/static/js/main.e5a2f706.chunk.js"
   },
   {
     "revision": "7f04d102c7f142565d5adc62a0653560",
@@ -52,10 +52,6 @@ self.__precacheManifest = [
     "url": "/react_grid/static/media/overwatch.254e8b84.jpg"
   },
   {
-    "revision": "0c982ee560c0f1af2841555b23223644",
-    "url": "/react_grid/static/media/league.0c982ee5.jpg"
-  },
-  {
     "revision": "f92ceb84346981081c1dccbc54054025",
     "url": "/react_grid/static/media/cs-go.f92ceb84.jpg"
   },
@@ -64,11 +60,15 @@ self.__precacheManifest = [
     "url": "/react_grid/static/media/background.e1482e7c.jpg"
   },
   {
+    "revision": "0c982ee560c0f1af2841555b23223644",
+    "url": "/react_grid/static/media/league.0c982ee5.jpg"
+  },
+  {
     "revision": "fc251160fcc16fce72036eb77f07aba7",
     "url": "/react_grid/static/media/location.fc251160.jpg"
   },
   {
-    "revision": "16e387a230e6088b33feb5dc6f45d731",
+    "revision": "e378876a233363dd1218889cbb55dae1",
     "url": "/react_grid/index.html"
   }
 ];
