@@ -1,11 +1,11 @@
 self.__precacheManifest = [
   {
-    "revision": "60929f5c59d38e04029657b4caa17b87",
-    "url": "/react_grid/static/media/slide2.60929f5c.png"
+    "revision": "6322228b8c3f8d2d4909eddc4e4661ea",
+    "url": "/react_grid/static/media/battlefieldV.6322228b.jpg"
   },
   {
-    "revision": "231bea5c7ed3f48cb33f",
-    "url": "/react_grid/static/css/main.bf507bc2.chunk.css"
+    "revision": "3c3543cbb01ea9699fcf",
+    "url": "/react_grid/static/css/main.4f492786.chunk.css"
   },
   {
     "revision": "1a178a711136a5de10df",
@@ -24,6 +24,10 @@ self.__precacheManifest = [
     "url": "/react_grid/static/media/slide1.d0771043.png"
   },
   {
+    "revision": "60929f5c59d38e04029657b4caa17b87",
+    "url": "/react_grid/static/media/slide2.60929f5c.png"
+  },
+  {
     "revision": "2a625eb761c7745aa8230e1a933cc594",
     "url": "/react_grid/static/media/apex-legends.2a625eb7.png"
   },
@@ -32,11 +36,7 @@ self.__precacheManifest = [
     "url": "/react_grid/static/media/slide3.e41d607c.png"
   },
   {
-    "revision": "6322228b8c3f8d2d4909eddc4e4661ea",
-    "url": "/react_grid/static/media/battlefieldV.6322228b.jpg"
-  },
-  {
-    "revision": "231bea5c7ed3f48cb33f",
+    "revision": "3c3543cbb01ea9699fcf",
     "url": "/react_grid/static/js/main.a1655837.chunk.js"
   },
   {
@@ -68,7 +68,7 @@ self.__precacheManifest = [
     "url": "/react_grid/static/media/location.fc251160.jpg"
   },
   {
-    "revision": "57c67b4ae008691e5bcca9b4f6ed84a3",
+    "revision": "16e387a230e6088b33feb5dc6f45d731",
     "url": "/react_grid/index.html"
   }
 ];
