@@ -859,7 +859,7 @@ footer {
 .games {
   flex-direction: column;
   position: relative;
-  top: -10vh;
+  top: -15vh;
   margin-bottom: -10vh;
   .list-row {
     height: auto;
@@ -898,7 +898,7 @@ footer {
 }
 
 .rates {
-  height: 175vh;
+  height: 200vh;
   .title {
     font-size: 2rem;
   }
@@ -920,10 +920,10 @@ footer {
     flex-direction: column;
     .card {
       width: 55%;
-      padding: 2%;
+      padding: 4%;
       order: 2;
       p {
-        font-size: 1.05rem;
+        font-size: 1.5rem;
       }
     }
     .descriptor {
@@ -1004,7 +1004,7 @@ footer {
     }
     .socialBar {
       position: relative;
-      top: -10vh;
+      top: -6vh;
       left: -18vw;
       ul a {
         font-size: 1.5rem;
