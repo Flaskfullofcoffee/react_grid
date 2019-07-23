@@ -46,7 +46,7 @@ class PriceInfoTempe extends Component {
               <div className='card descriptor'>
                 <h3>Binge</h3>
                 <hr />
-                <p>Binge time starts from the moment you log on & continues until the full six or ten hours is spent. This means that the timer will continue whether you are logged on or not.
+                <p>Binge time starts from the moment you log on & lasts for 24hrs on standard & 16hrs on VIP. This means you have 24/16 hours to use the package before it expires.
                 </p>
               </div>
               <div className='card'>
@@ -66,7 +66,7 @@ class PriceInfoTempe extends Component {
               <div className='card descriptor'>
                 <h3>Bulk</h3>
                 <hr />
-                <p>Bulk time starts from the moment you login & expires after a full 24hrs. Meaning all un-spent time will expire 24hrs after login. Time may be paused by logging off.
+                <p>Bulk time starts from the moment you log on & lasts for 48hrs on standard & 36hrs on VIP. This means you have 48/36 hours to use the package before it expires.
                 </p>
               </div>
               <div className='card'>
@@ -86,7 +86,7 @@ class PriceInfoTempe extends Component {
               <div className='card descriptor'>
                 <h3>24/hr Binge</h3>
                 <hr />
-                <p>Binge time starts from the moment you log on & continues until the full six or ten hours is spent. This means that the timer will continue whether you are logged on or not.
+                <p>Binge time starts from the moment you log on & lasts for 72hrs on standard & 48hrs on VIP. This means you have 3 days or 2 days to use the package.
                 </p>
               </div>
               <div className='card'>
