@@ -18,7 +18,7 @@ class PriceInfoPhx extends Component {
               <hr />
               <p>NVIDIA GTX 1070</p>
               <hr />
-              <p>BenQ 24" esports 240hz xl's</p>
+              <p>BenQ 24"  144hz xl's</p>
               <hr />
             </div>
             <div className='card'>
@@ -31,7 +31,7 @@ class PriceInfoPhx extends Component {
               <hr />
               <p>NVIDIA GTX 2070</p>
               <hr />
-              <p>BenQ 27" 2K esports 144hz xl's</p>
+              <p>BenQ 27" 240hz xl's</p>
               <hr />
             </div>
           </div>

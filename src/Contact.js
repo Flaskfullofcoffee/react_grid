@@ -13,7 +13,7 @@ class Contact extends Component {
               </p>
               <div className='features'>
                 <i class="fa fa-wifi" aria-hidden="true"></i><p>500mbps up/down</p>
-                <i class="fa fa-sun-o" aria-hidden="true"></i> <i class="fa fa-moon-o" aria-hidden="true"></i><p>Open 24/7</p>
+                <i class="fa fa-sun-o" aria-hidden="true"></i> <i class="fa fa-moon-o" aria-hidden="true"></i><p>Day & Nite</p>
                 <i class="fa fa-gamepad" aria-hidden="true"></i><p>Massive game library</p>
               </div>
               <div className='numbers'>
