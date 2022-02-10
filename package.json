@@ -37,7 +37,7 @@
     "concurrently": "^4.1.0",
     "gh-pages": "^2.0.1",
     "mocha": "^6.1.4",
-    "node-sass": "^4.12.0",
+    "node-sass": "^7.0.0",
     "react-spring": "^8.0.27",
     "react-transition-group": "^4.1.0"
   }
